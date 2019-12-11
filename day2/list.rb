@@ -1,6 +1,6 @@
 
-def opcode_name(opcode)
-    case opcode
+def instruction_name(instruction)
+    case instruction
     when 1
         "ADD"
     when 2
@@ -14,18 +14,18 @@ end
 
 program = STDIN.read.chomp.split(',').map(&:to_i)
 
-puts(" Op| Op1| Op2| Addr|\n")
+puts(" op| p1| p2| addr|\n")
 puts("---+----+----+------\n")
 
-(0...program.size).step(4).each do |i|
-    if program[i] == 99
-        puts(" 99|    |    |     |\n")
+(0...program.size).step(4).each do |instruction_pointer|
+    if program[instruction_pointer] == 99
+        puts(" 99|   |   |    |\n")
         next
     end
-  opcode, op1, op2, addr = program[i,4]
+  instruction, p1, p2, addr = program[instruction_pointer,4]
 
-  opname = opcode_name(opcode)
+  opname = instruction_name(instruction)
 
 
-  puts("#{opname}|#{op1.to_s.rjust(4)}(#{program[op1].to_s.rjust(3)})|#{op2.to_s.rjust(4)}(#{program[op2].to_s.rjust(3)})|#{addr.to_s.rjust(5)}|\n")
+  puts("#{opname}|#{p1.to_s.rjust(3)}(#{program[p1].to_s.rjust(3)})|#{p2.to_s.rjust(3)}(#{program[p2].to_s.rjust(3)})|#{addr.to_s.rjust(5)}|\n")
 end

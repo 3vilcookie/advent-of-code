@@ -1,23 +1,36 @@
-program = STDIN.read.chomp.split(',').map(&:to_i)
 
-# Patch program
-program[1] = 12
-program[2] = 2
+class Intcode
+    def initialize(program)
+        @program = program.dup
+    end
+    
+    def size
+        @program.size
+    end
 
-puts("Op| Op1| Op2| Addr|\n")
-(0...program.size).step(4).each do |i|
-  break if program[i] == 99
+    def run(noun=12,verb=2)
+        
+        @program[1] = noun
+        @program[2] = verb
+        
+        #puts("op| p1| p2| addr|\n")
+        
+        (0...@program.size).step(4).each do |i|
+          break if @program[i] == 99
 
-  opcode, op1, op2, addr = program[i,4]
+          instruction, p1, p2, addr = @program[i,4]
 
-  puts("#{opcode.to_s.rjust(2)}|#{op1.to_s.rjust(4)}|#{op2.to_s.rjust(4)}|#{addr.to_s.rjust(5)}|\n") 
+          #puts("#{instruction.to_s.rjust(2)}|#{p1.to_s.rjust(4)}|#{p2.to_s.rjust(4)}|#{addr.to_s.rjust(5)}|\n") 
 
-  case opcode
-  when 1 
-    program[addr] = program[op1] + program[op2]
-  when 2
-    program[addr] = program[op1] * program[op2]
-  end
+          case instruction
+          when 1 
+            @program[addr] = @program[p1] + @program[p2]
+          when 2
+            @program[addr] = @program[p1] * @program[p2]
+          end
+        end
 
+        @program[0]
+    end
 end
-puts("Value at Addr 0: " + program[0].to_s)
+
