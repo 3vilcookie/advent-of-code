@@ -1,5 +1,7 @@
 # Advent of code
 
+
+
 # Day 1 - Fuel :heavy_check_mark:
 
 - [Part 1](day1/fuel1.rb)
@@ -19,6 +21,10 @@
 # Day 4 - Secure Container
 
 - [Crack](day4/crack.rb)
+
+# Day 8 - Space Image Format
+
+- [Part1](day8/part1.rb)
 
 # Day 12 - The N-Body Problem
 
