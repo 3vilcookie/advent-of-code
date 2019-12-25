@@ -41,7 +41,8 @@
 - [Wrapping paper need](15/day2/wrapping.rb)
 - [Ribbon need](15/day2/ribbon.rb)
 
-### Day 3 - 
+### Day 3 - Eggnogged elfe and robot santa
 
 - [Unique houses](15/day3/houses.rb)
+- [Robot santa](15/day3/robot.rb)
 
