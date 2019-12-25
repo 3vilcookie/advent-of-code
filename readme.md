@@ -46,3 +46,6 @@
 - [Unique houses](15/day3/houses.rb)
 - [Robot santa](15/day3/robot.rb)
 
+### Day 4 - AdventCoin
+
+- [Miner](15/day4/miner.rb)
