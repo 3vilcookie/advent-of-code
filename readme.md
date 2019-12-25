@@ -34,4 +34,4 @@
 ## 2015
 ### Day 1 - Not quite lisp
 
-- [Solver](15/day1/part1.rb)
+- [Solver](15/day1/floor_finder.rb)
