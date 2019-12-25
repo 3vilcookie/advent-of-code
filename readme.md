@@ -40,3 +40,8 @@
 
 - [Wrapping paper need](15/day2/wrapping.rb)
 - [Ribbon need](15/day2/ribbon.rb)
+
+### Day 3 - 
+
+- [Unique houses](15/day3/houses.rb)
+
