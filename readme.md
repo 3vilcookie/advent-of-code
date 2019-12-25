@@ -35,3 +35,8 @@
 ### Day 1 - Not quite lisp
 
 - [Solver](15/day1/floor_finder.rb)
+
+### Day 2 - I was told there would be no math
+
+- [Wrapping paper need](15/day2/wrapping.rb)
+- [Ribbon need](15/day2/ribbon.rb)
