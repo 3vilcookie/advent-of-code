@@ -49,3 +49,9 @@
 ### Day 4 - AdventCoin
 
 - [Miner](15/day4/miner.rb)
+
+### Day 5 - Naughty or nice
+
+- [Naughty or nice](15/day5/naughty_or_nice.rb)
+- [Naughtier or nicer](15/day5/naughtier_or_nicer.rb)
+
