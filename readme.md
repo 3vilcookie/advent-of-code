@@ -55,3 +55,7 @@
 - [Naughty or nice](15/day5/naughty_or_nice.rb)
 - [Naughtier or nicer](15/day5/naughtier_or_nicer.rb)
 
+### Day 8 - Escape fun
+
+- [Part1](15/day8/escape_fun.rb)
+- [Part2](15/day8/more_escape_fun.rb)
