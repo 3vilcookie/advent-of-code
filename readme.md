@@ -55,6 +55,10 @@
 - [Naughty or nice](15/day5/naughty_or_nice.rb)
 - [Naughtier or nicer](15/day5/naughtier_or_nicer.rb)
 
+### Day 6 - Probably a Fire Hazard
+
+- [Part 1](15/day6/part1.rb) :white_check_mark:
+
 ### Day 8 - Escape fun :white_check_mark:
 
 - [Part1](15/day8/escape_fun.rb)
