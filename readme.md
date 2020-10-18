@@ -58,6 +58,7 @@
 ### Day 6 - Probably a Fire Hazard
 
 - [Part 1](15/day6/part1.rb) :white_check_mark:
+- [Part 2](15/day6/part2.rb) :white_check_mark:
 
 ### Day 8 - Escape fun :white_check_mark:
 
