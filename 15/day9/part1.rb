@@ -6,12 +6,14 @@ locations = []
 STDIN.read.lines.select do |line|
   line.chomp!
   a,b,distance =  line.scan(/^(\w+)\s*to\s*(\w+)\s*=\s*(\d+)$/)[0]
-  locations << a
-  locations << b
-  dist[a] ||= {}
-  dist[a][b] = distance.to_i
-  dist[b] ||= {}
-  dist[b][a] = distance.to_i
+  src = a.to_sym
+  dst = b.to_sym
+  locations << src
+  locations << dst
+  dist[src] ||= {}
+  dist[src][dst] = distance.to_i
+  dist[dst] ||= {}
+  dist[dst][src] = distance.to_i
 end
 
 afterPrep = Time.now
@@ -26,9 +28,13 @@ end.minmax
 
 finish = Time.now
 
+tPrep = ((afterPrep - start) * 1_000_000).to_i
+tSearch = ((finish - afterPrep) * 1_000_000).to_i
+tTotal = ((finish - start) * 1_000_000).to_i
+
 puts "Shortest distance: #{minmax[0]}"
 puts "Longest distance: #{minmax[1]}"
 puts "---"
-puts "Preparation: #{afterPrep-start}"
-puts "     Search: #{finish-afterPrep}"
-puts "          ∑: #{finish-start}"
+puts "Preparation: #{tPrep}µs"
+puts "     Search: #{tSearch}µs"
+puts "          ∑: #{tTotal}µs"
