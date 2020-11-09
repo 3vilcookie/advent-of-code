@@ -60,7 +60,48 @@
 - [Part 1](15/day6/part1.rb) :white_check_mark:
 - [Part 2](15/day6/part2.rb) :white_check_mark:
 
+### Day 7 - Some Assembly Required
+
+- [Part 1](15/day7/part1.rb) :white_check_mark:
+- [Part 2](15/day7/part2.rb) :white_check_mark:
+
 ### Day 8 - Escape fun :white_check_mark:
 
-- [Part1](15/day8/escape_fun.rb)
-- [Part2](15/day8/more_escape_fun.rb)
+- [Part1](15/day8/escape_fun.rb) :white_check_mark:
+- [Part2](15/day8/more_escape_fun.rb) :white_check_mark:
+
+### Day 9 - Some Assembly Required
+
+- [Both](15/day9/part1.rb) :white_check_mark:
+
+### Day 10 - Elves Look, Elves Say
+
+- [Both](15/day10/part1.rb) :white_check_mark:
+
+### Day 11 - Corporate Policy
+
+- [Both](15/day11/part1.rb) :white_check_mark:
+
+### Day 12 - JSAbacusFramework.io
+
+- [Part 1](15/day12/part1.rb) :white_check_mark:
+- [Part 2](15/day12/part2.rb) :white_check_mark:
+
+### Day 13 - Knights of the Dinner Table
+
+- [Part 1](15/day13/part1.rb) :white_check_mark:
+- [Part 2](15/day13/part2.rb) :white_check_mark:
+
+### Day 14 - Reindeer Olympics
+
+- [Part 1](15/day14/part1.rb) :white_check_mark:
+- [Part 2](15/day14/part2.rb) :white_check_mark:
+
+### Day 17 - No Such Thing as Too Much
+
+- [Part 1](15/day17/part1.rb) :white_check_mark:
+- [Part 2](15/day17/part2.rb) :white_check_mark:
+
+### Day 19 - Medicine for Rudolph
+
+- [Part 1](15/day19/part1.rb) :white_check_mark:
